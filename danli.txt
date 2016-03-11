@@ -1,0 +1,32 @@
+单利
+#include<stdio.h>
+main()
+{
+	int a,b;
+	double c;
+	printf("输入本金:");
+	scanf("%d",&a);
+	printf("输入利率:");
+	scanf("%lf",&c);
+	printf("输入年限:");
+	scanf("%d",&b);
+	printf("%d年后本息=%lf",b,a+b*(a*c));
+}
+
+
+计算本金
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	int a,b;
+	double c,d;
+	printf("输入你期望的金额:");
+	scanf("%d",&a);
+	printf("输入利率:");
+	scanf("%lf",&c);
+	printf("输入年限:");
+	scanf("%d",&b);
+	d=pow(1+c,b);
+	printf("现在你应该存=%lf",a/d);
+}
