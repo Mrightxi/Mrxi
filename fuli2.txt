@@ -1,0 +1,33 @@
+#include<stdio.h>
+maiin()
+{
+ int a,b,c,i,r;
+ double d,f;
+ printf("请输入本金以及你所期待的收益:");
+ scanf("%d",&a);
+ scanf("%d",&b);
+ printf("请输入利率:");
+ scanf("%lf",&d);
+ c=b/a;
+ f=1+d;
+ r=(int)f;
+ printf("%d",r);
+}
+
+#include<stdio.h>
+#include<math.h>
+main()
+{
+ int a,b,c,year;
+ double d,f,num;
+ printf("请输入本金以及你所期待的收益:");
+ scanf("%d",&a);
+ scanf("%d",&b);
+ printf("请输入年限:");
+ scanf("%d",&year);
+ c=b/a;
+ num=(double)1/year;
+ d=pow(c,num);
+ f=d-1;
+ printf("你需要选择%lf的利率项目\n",f);
+}
